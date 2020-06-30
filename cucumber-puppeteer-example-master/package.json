@@ -1,0 +1,22 @@
+{
+  "name": "cucumber-puppeteer-example",
+  "description": "Example project on how to use cucumber with puppeteer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:spirosikmd/cucumber-puppeteer-example.git",
+  "author": "Spyros Ioakeimidis <spyrosikmd@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/register": "^7.8.3",
+    "chai": "^4.2.0",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.1.0",
+    "puppeteer": "^2.1.1"
+  },
+  "scripts": {
+    "test": "cucumber-js --require-module @babel/register --format json:cucumber_report.json",
+    "test:report": "node report.js"
+  }
+}
