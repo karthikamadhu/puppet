@@ -15,4 +15,4 @@ Feature: Manage todo list
       | Prepare dinner    |
     When I press the delete button of the todo item 1
     Then I expect the todo list to have 1 item
-    And I expect the todo item 1 to be "Prepare dinner"
+    And I expect the todo item 1 to be "dinner"
